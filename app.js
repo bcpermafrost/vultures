@@ -1,19 +1,18 @@
 
 //modal views
-function showguitaristmodal() {
+function guitaristmodal(action) {
   $('#guitaristmodal')
-    .modal('show');
+    .modal(action);
 
 }
 
-function showdrummermodal() {
+function drummermodal(action) {
   $('#drummermodal')
-    .modal('show');
+    .modal(action);
 
 }
 
-function showvocalistmodal() {
+function vocalistmodal(action) {
   $('#vocalistmodal')
-    .modal('show');
-
+    .modal(action);
 }
