@@ -1,0 +1,305 @@
+<html>
+
+<head>
+	<link rel="stylesheet" href="semantic/dist/semantic.min.css" type="text/css" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+	<div class="ui inverted top fixed menu nav">
+		<li class="item">
+			<h1>VPR</h1>
+		</li>
+		<a class="item" href="#">
+       Home
+     </a>
+		<a class="item" href="#band">
+		 Band
+		 </a>
+		<a class="item" href="#tour">
+      Tour
+     </a>
+		<a class="item" href="#music">
+      Music
+     </a>
+		<a class="item" href="#news">
+      News
+     </a>
+
+		<div class="right inverted menu">
+			<a class="item" href="http://facebook.com"><i class="ui big blue facebook icon"></i> </a>
+			<a class="item" href="http://twitter.com"><i class="ui big blue twitter icon"></i> </a>
+			<a class="item" href="http://youtube.com"><i class="ui big red youtube icon"></i> </a>
+			<a class="item" href="http://soundcloud.com"><i class="ui big orange soundcloud icon"></i> </a>
+			<!-- <a class="item" href="http://soundcloud.com"><i class="ui big amazon icon"></i> </a> -->
+		</div>
+	</div>
+
+	<div class="ui masthead">
+		<img src="images/band1-min.jpg" alt="image masthead" width="1920" height="1275" />
+	</div>
+	<div class="ui inverted vertical segment ">
+
+		<!-- <h1 id="band" class="ui horizontal divider header"> Band </h1> -->
+
+<div class="ui three centered column grid">
+	<div class="five wide column"> 
+		<img class="ui medium" src="./images/corey2-min.jpg" alt="guitarist" width="450" height="700"  onclick="guitaristmodal('show')"/>
+	</div>
+	<div class="five wide column">
+		<img class="ui medium" src="./images/darren1-min.jpg" alt="drummer" width="450" height="700"  onclick="drummermodal('show')"/>
+	</div>
+	<div class="five wide column">
+		<img class="ui medium" src="./images/alan2-min.jpg" alt="vocalist" width="460" height="700" onclick="vocalistmodal('show')" />
+	</div>
+</div>
+
+
+<div class="ui three centered column grid">
+	<div class="five wide column">
+		<div class="ui inverted  segment">
+			<h2> Guitarist </h2>
+		</div>
+	</div>
+	<div class="five wide column">
+		<div class="ui inverted segment">
+			<h2> Drummer </h2>
+		</div>
+	</div>
+	<div class="five wide column">
+		<div class="ui inverted segment">
+			<h2> Vocalist/Bass/Synth </h2>
+		</div>
+	</div>
+</div>
+
+<h1 id="tour" class="ui horizontal divider header"> Tour </h1>
+
+<div class="ui container">
+	<table class="ui inverted selectable centered table">
+		<thead>
+			<th>
+				#
+			</th>
+			<th>
+				Location
+			</th>
+			<th>
+				Venue
+			</th>
+			<th>
+				Date
+			</th>
+			<th>
+				Buy
+			</th>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>London, Ontario</td>
+				<td>London Music Hall</td>
+				<td>August 28th</td>
+				<td><a href="#">Get Tickets</a></td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Toronto, Ontario</td>
+				<td>Fox and the Fiddle</td>
+				<td>Sept 1st</td>
+				<td><a href="#">Get Tickets</a></td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>London, Ontario</td>
+				<td>Scotts Corner</td>
+				<td>Sept 5th</td>
+				<td><a href="#">Get Tickets</a></td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>Toronto, Ontario</td>
+				<td>Molson Ampitheatre</td>
+				<td>Sept 30th</td>
+				<td><a href="#">Get Tickets</a></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+
+<h1 id="news" class="ui horizontal divider header"> News</h1>
+<div class="ui centered column grid">
+	<div class="five wide column">
+		<div class="ui inverted vertical segment">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut lorem dapibus, bibendum odio id, bibendum urna.
+				Nulla ante lectus, imperdiet eget est sit amet, hendrerit fringilla eros. Mauris convallis risus vulputate, efficitur
+				nibh ut, semper ipsum. Integer viverra felis vestibulum convallis scelerisque. Integer eu urna id sapien ullamcorper
+				vestibulum at sed elit. Pellentesque suscipit sodales tincidunt. Nulla a lectus sit amet tellus rutrum efficitur vel
+				maximus eros. Nulla vulputate ultricies augue. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+				ridiculus mus. Vestibulum nec porttitor eros. Suspendisse tincidunt nisl sit amet est tincidunt, ut sodales lorem efficitur.
+				Proin placerat condimentum velit, vitae placerat ante lacinia non. Praesent feugiat vestibulum mi sit amet ultrices.
+				Duis et hendrerit mauris. Maecenas euismod, libero a egestas fringilla, mauris neque blandit tellus, nec malesuada nunc
+				lacus a turpis. Morbi vel ligula ante. Etiam quis ex scelerisque, pulvinar nibh vitae, pharetra quam. Nunc ultricies
+				velit vitae odio elementum facilisis. In sit amet sodales tortor. Aenean ac ante feugiat, elementum erat ac, condimentum
+				dui. Vestibulum molestie at ipsum sed sodales. Cras efficitur volutpat enim, eu maximus diam. Suspendisse convallis augue
+				purus, id volutpat mauris tincidunt a.
+			</p>
+		</div>
+	</div>
+	<div class="five wide column">
+		<div class="ui inverted vertical segment">
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut lorem dapibus, bibendum odio id, bibendum urna. Nulla
+				ante lectus, imperdiet eget est sit amet, hendrerit fringilla eros. Mauris convallis risus vulputate, efficitur nibh
+				ut, semper ipsum. Integer viverra felis vestibulum convallis scelerisque. Integer eu urna id sapien ullamcorper vestibulum
+				at sed elit. Pellentesque suscipit sodales tincidunt. Nulla a lectus sit amet tellus rutrum efficitur vel maximus eros.
+				Nulla vulputate ultricies augue. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+				Vestibulum nec porttitor eros. Suspendisse tincidunt nisl sit amet est tincidunt, ut sodales lorem efficitur. Proin placerat
+				condimentum velit, vitae placerat ante lacinia non. Praesent feugiat vestibulum mi sit amet ultrices. Duis et hendrerit
+				mauris. Maecenas euismod, libero a egestas fringilla, mauris neque blandit tellus, nec malesuada nunc lacus a turpis.
+				Morbi vel ligula ante. Etiam quis ex scelerisque, pulvinar nibh vitae, pharetra quam. Nunc ultricies velit vitae odio
+				elementum facilisis. In sit amet sodales tortor. Aenean ac ante feugiat, elementum erat ac, condimentum dui. Vestibulum
+				molestie at ipsum sed sodales. Cras efficitur volutpat enim, eu maximus diam. Suspendisse convallis augue purus, id volutpat
+				mauris tincidunt a.
+			</p>
+		</div>
+	</div>
+</div>
+
+
+<h1 id="band" class="ui horizontal divider header"> Music </h1>
+
+<!-- Insert Bandcamp API segment -->
+
+<div class="ui centered column grid">
+	<div class="five wide column">
+		<div class="ui grid">
+			<div class="row">
+				<div class="five wide column">
+					<iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=2187377502/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
+seamless>
+<a href="http://vulturesplayingruckus.bandcamp.com/album/act-1">Act 1 by Vultures Playing Ruckus</a></iframe>
+</div>
+</div>
+<!--<div class="row">
+	<div class="five wide column">
+		<img alt="Album 4" width="150" height="150" />
+	</div>
+	<div class="five wide column">
+		<img alt="Album 5" width="150" height="150" />
+	</div>
+	<div class="five wide column">
+		<img alt="Album 6" width="150" height="150" />
+	</div>
+</div>-->
+</div>
+</div>
+<div class="five wide column">
+	<div class="ui inverted vertical segment">
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut lorem dapibus, bibendum odio id, bibendum urna. Nulla
+			ante lectus, imperdiet eget est sit amet, hendrerit fringilla eros. Mauris convallis risus vulputate, efficitur nibh ut,
+			semper ipsum. Integer viverra felis vestibulum convallis scelerisque. Integer eu urna id sapien ullamcorper vestibulum
+			at sed elit. Pellentesque suscipit sodales tincidunt. Nulla a lectus sit amet tellus rutrum efficitur vel maximus eros.
+			Nulla vulputate ultricies augue. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+			Vestibulum nec porttitor eros. Suspendisse tincidunt nisl sit amet est tincidunt, ut sodales lorem efficitur. Proin placerat
+			condimentum velit, vitae placerat ante lacinia non. Praesent feugiat vestibulum mi sit amet ultrices. Duis et hendrerit
+			mauris. Maecenas euismod, libero a egestas fringilla, mauris neque blandit tellus, nec malesuada nunc lacus a turpis.
+			Morbi vel ligula ante. Etiam quis ex scelerisque, pulvinar nibh vitae, pharetra quam. Nunc ultricies velit vitae odio
+			elementum facilisis. In sit amet sodales tortor. Aenean ac ante feugiat, elementum erat ac, condimentum dui. Vestibulum
+			molestie at ipsum sed sodales. Cras efficitur volutpat enim, eu maximus diam. Suspendisse convallis augue purus, id volutpat
+			mauris tincidunt a.
+		</p>
+	</div>
+</div>
+</div>
+</div>
+
+<!-- MODALS -->
+<div id="guitaristmodal" class="ui basic standard modal">
+	<div class="header">guitarist</div>
+
+	<div class="image content">
+		<div class="ui big image">
+			<img width="928" height="1397"  src="./images/corey1-min.jpg">
+		</div>
+		<div class="description">
+			<div class="ui header"> Guitarist Description </div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut lorem dapibus, bibendum odio id, bibendum urna.
+				Nulla ante lectus, imperdiet eget est sit amet, hendrerit fringilla eros. Mauris convallis risus vulputate, efficitur
+				nibh ut, semper ipsum. Integer viverra felis vestibulum convallis scelerisque. Integer eu urna id sapien ullamcorper
+				vestibulum at sed elit. Pellentesque suscipit sodales tincidunt. Nulla a lectus sit amet tellus rutrum efficitur vel
+				maximus eros. Nulla vulputate ultricies augue. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+				ridiculus mus. Vestibulum nec porttitor eros.</p>
+		</div>
+	</div>
+
+	<div class="actions">
+		<div class="ui red right labeled icon button" onclick="guitaristmodal('hide')">
+			Close
+			<i class="close icon"></i>
+		</div>
+	</div>
+</div>
+<div id="drummermodal" class="ui basic standard modal">
+	<div class="header">drummer</div>
+	<div class="image content">
+		<div class="ui big image">
+			<img src="images/test.png">
+		</div>
+		<div class="description">
+			<div class="ui header"> Drummer Description </div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut lorem dapibus, bibendum odio id, bibendum urna.
+				Nulla ante lectus, imperdiet eget est sit amet, hendrerit fringilla eros. Mauris convallis risus vulputate, efficitur
+				nibh ut, semper ipsum. Integer viverra felis vestibulum convallis scelerisque. Integer eu urna id sapien ullamcorper
+				vestibulum at sed elit. Pellentesque suscipit sodales tincidunt. Nulla a lectus sit amet tellus rutrum efficitur vel
+				maximus eros. Nulla vulputate ultricies augue. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+				ridiculus mus. Vestibulum nec porttitor eros.</p>
+		</div>
+	</div>
+
+	<div class="actions">
+		<div class="ui red right labeled icon button" onclick="drummermodal('hide')">
+			Close
+			<i class="close icon"></i>
+		</div>
+	</div>
+</div>
+<div id="vocalistmodal" class="ui basic standard modal">
+	<div class="ui inverted header">Vocalist/Synth</div>
+
+	<div class="image content">
+		<div class="ui inverted big image">
+			<img width="792" height="526" src="./images/alan1-min.jpg">
+		</div>
+		<div class="description">
+			<div class="ui inverted header"> Vocalist Description </div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut lorem dapibus, bibendum odio id, bibendum urna.
+				Nulla ante lectus, imperdiet eget est sit amet, hendrerit fringilla eros. Mauris convallis risus vulputate, efficitur
+				nibh ut, semper ipsum. Integer viverra felis vestibulum convallis scelerisque. Integer eu urna id sapien ullamcorper
+				vestibulum at sed elit. Pellentesque suscipit sodales tincidunt. Nulla a lectus sit amet tellus rutrum efficitur vel
+				maximus eros. Nulla vulputate ultricies augue. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+				ridiculus mus. Vestibulum nec porttitor eros.</p>
+		</div>
+	</div>
+
+	<div class="actions">
+		<div class="ui red right labeled icon button" onclick="vocalistmodal('hide')">
+			Close
+			<i class="close icon"></i>
+		</div>
+	</div>
+
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="semantic/dist/semantic.min.js"></script>
+<script src="app.js"></script>
+
+
+</body>
+
+</html>

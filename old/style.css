@@ -1,0 +1,7 @@
+body{
+background-color: #000000;
+}
+
+.ui.inverted.menu{
+    border-bottom: 1px solid white;
+}
