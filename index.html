@@ -1,47 +1,33 @@
 <!DOCTYPE html>
 <head>
-
+<title> VPR Rocks </title>
 <!-- Style Sheets -->
 <link rel="stylesheet" href="./css/bootstrap.min.css">
 <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+<div ng-app="vpr_main">
+<a href="/#!home"> Click me </a>
+<a href="/#!music"> Click me </a>
+<div ng-view>
 
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">VPR Rocks</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">Music</a></li>
-    </ul>
-  </div>
-</nav>
-  
-<div class="container">
-  <div class="row">
-  <div class="col-xs-4 color_one"><p><br><br><br></p></div>
-  <div class="col-xs-4 color_two"><p><br><br><br></p></div>
-  <div class="col-xs-4 color_three"><p><br><br><br></p></div>
-  </div>
+
 </div>
-
-<div class="container">
-  <div class="row">
-  <div class="col-xs-4 color_three_set_two"><p><br><br><br></p></div>
-  <div class="col-xs-4 color_one_set_two"><p><br><br><br></p></div>
-  <div class="col-xs-4 color_two_set_two"><p><br><br><br></p></div>
-  </div>
 </div>
+<script type="text/javascript" src="./js/jquery.min.js" > </script>
+<script type="text/javascript" src="./js/bootstrap.min.js" > </script>
+<script type="text/javascript" src="./js/angular.min.js" > </script>
+<script type="text/javascript" src="./js/angular.router.min.js" > </script>
+<script>
 
-<div class="container">
-  <div class="row">
-  <div class="col-xs-4 color_one_set_three"><p><br><br><br></p></div>
-  <div class="col-xs-4 color_two_set_three"><p><br><br><br></p></div>
-  <div class="col-xs-4 color_three_set_three"><p><br><br><br></p></div>
-  </div>
-</div>
+var app = angular.module("vpr_main",  ["ngRoute"]);
+app.config(function($routeProvider){
+  $routeProvider
+  .when("/",{ templateUrl : "views/main/main.html"})
+  .when("/home",{ templateUrl : "views/home/home.html"})
+  .when("/music",{ templateUrl : "views/music/music.html"});
+});
 
+</script>
 </body>
 </html>
