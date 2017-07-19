@@ -3,53 +3,31 @@
 <title> VPR Rocks </title>
 <!-- Style Sheets -->
 <link rel="stylesheet" href="./css/bootstrap.min.css">
+<link rel="stylesheet" href="./css/font-awesome.min.css">
 <link rel="stylesheet" href="./css/style.css">
 </head>
-<<<<<<< HEAD
-<body>
-<div ng-app="vpr_main">
-<a href="/#!home"> Click me </a>
-<a href="/#!music"> Click me </a>
+<body ng-app="vpr_main">
 <div ng-view>
 
 
 </div>
-</div>
-=======
-<body ng-app="vpr_main">
-<ng-view>
 
-
-</ng-view>
->>>>>>> 0e97c5d3b33ad9a307287c440679442c3a58f561
-<script type="text/javascript" src="./js/jquery.min.js" > </script>
-<script type="text/javascript" src="./js/bootstrap.min.js" > </script>
-<script type="text/javascript" src="./js/angular.min.js" > </script>
-<script type="text/javascript" src="./js/angular.router.min.js" > </script>
-<<<<<<< HEAD
+<script type="text/javascript" src="/js/bootstrap.angular.min.js"> </script>
+<script type="text/javascript" src="/js/angular.min.js"> </script>
+<script type="text/javascript" src="/js/angular.router.min.js"> </script>
 <script>
 
 var app = angular.module("vpr_main",  ["ngRoute"]);
 app.config(function($routeProvider){
   $routeProvider
-  .when("/",{ templateUrl : "views/main/main.html"})
-  .when("/home",{ templateUrl : "views/home/home.html"})
-  .when("/music",{ templateUrl : "views/music/music.html"});
+  .when("/home",{ templateUrl : "./views/home/home.html"})
+  .when("/music", {templateUrl : "./views/music/music.html"})
+  .when("/tour", {templateUrl : "./views/tour/tour.html"})
+  .otherwise({
+    templateUrl: '/views/main/main.html'
+  })
 });
 
-=======
-
-
-<script>
-
-var app = angular.module("vpr_main",  ["ngRoute"]);
-app.config(function($routeProvider){
-  $routeProvider
-  .when("/", { templateUrl : "index.html"})
-  .when("/home",{ templateUrl : "home.html"});
-});
-
->>>>>>> 0e97c5d3b33ad9a307287c440679442c3a58f561
 </script>
 </body>
 </html>
