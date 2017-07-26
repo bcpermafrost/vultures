@@ -1,5 +1,5 @@
 body{
-	background-color: #4e4e4e;
+	background-color: rgba(128,128,128,0.5);
 }
 .color_one{
 	background-color: #ec2045;
@@ -15,7 +15,7 @@ body{
 }
 .primary{
 	/*background-color: #ffedaf;*/
-	background-color: #ec2045;
+	background-color: rgba(236, 32, 69, 0.8);
 }
 
 a {
