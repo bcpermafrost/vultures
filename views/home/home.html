@@ -1,9 +1,11 @@
+<!-- Controller -->
 <nav class="navbar navbar-default primary" style="margin-bottom:0px;">
   <div class="container">
     <div class="row">
       <div class="col-xs-5 col-centered">
         <div class="navbar-header">
-          <a id="logo" href="#"><img src="/images/VPR-Rocks-lg.png" /></a>
+          <!-- <a id="logo" href="#"><img src="/images/VPR-Rocks-lg.png" /></a> -->
+          <h1> Vultures Playing Ruckus </h1>
         </div>
       </div>
     </div>
@@ -20,28 +22,54 @@
     </div>
   </div>
 </nav>
-
-
-<!-- Controller -->
-<div ng-controller="homeController">
 <div class="row">
-  <div style="height: 305px">
-    <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
-      <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
-        <img ng-src="{{slide.image}}" style="margin:auto;">
-        <div class="carousel-caption">
-          <h4>Slide {{slide.id}}</h4>
-          <p>{{slide.text}}</p>
+  <div ng-controller="homeController">
+    <div class="col-xs-12">
+      <div class="carousel">
+        <div class="ng-isolate-scope carousel" uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides" style="margin: auto; width:100%; height: 75vh !important;">
+          <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+            <img ng-src="{{slide.image}}" style="padding-top: 20px;" height="650vh;">
+            <div class="carousel-caption">
+            </div>
+          </div>
         </div>
       </div>
     </div>
+    <!-- End of Controller -->
   </div>
-
-<div class="row">
 </div>
-
-
-
-
-<!-- End of Controller -->
+<div class="row">
+  <div class="col-xs-4 color_one text-center">
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1> Tours </h1>
+    <br>
+    <br>
+    <br>
+    <br>
+  </div>
+  <div class="col-xs-4 color_two text-center">
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1> Merch </h1>
+    <br>
+    <br>
+    <br>
+    <br>
+  </div>
+  <div class="col-xs-4 color_three text-center">
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1> Tunes </h1>
+    <br>
+    <br>
+    <br>
+    <br>
+  </div>
 </div>

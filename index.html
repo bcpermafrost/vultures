@@ -1,62 +1,79 @@
 <!DOCTYPE html>
+
 <head>
-<title> VPR Rocks </title>
-<!-- Style Sheets -->
-<link rel="stylesheet" href="./css/bootstrap.min.css">
-<link rel="stylesheet" href="./css/font-awesome.min.css">
-<link rel="stylesheet" href="./css/style.css">
+  <title> VPR Rocks </title>
+  <!-- Style Sheets -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body ng-app="vpr_main">
-<div ng-view>
-
-
-</div>
-
-<script type="text/javascript" src="/js/angular.min.js"> </script>
-<script type="text/javascript" src="/js/angular.router.min.js"> </script>
-<script type="text/javascript" src="/js/bootstrap.angular.min.js"> </script>
-
-<script>
-
-var app = angular.module("vpr_main",  ["ngRoute","ui.bootstrap"]);
-app.config(function($routeProvider){
-  $routeProvider
-  .when("/home",{ templateUrl : "./views/home/home.html", controller: "homeController"})
-  .when("/music", {templateUrl : "./views/music/music.html"})
-  .when("/tour", {templateUrl : "./views/tour/tour.html"})
-  .otherwise({
-    templateUrl: '/views/main/main.html'
-  })
-});
-
-app.controller('homeController', function($scope){
-  $scope.myInterval = 5000;
-  $scope.noWrapSlides = false;
-  $scope.active = 0;
-  var currIndex = 0;
-  
-  var slides = $scope.slides = [
-    {
-      image: "/images/alan1-min.jpg",
-      text: "alan1",
-      id: 0
-    },
-    {
-      image: "/images/darren1-min.jpg",
-      text: "darren1",
-      id: 1
-    },
-    {
-      image: "/images/corey1-min.jpg",
-      text: "corey1",
-      id: 2
-    }
-  ];
-
-
-    
-});
-
-</script>
+  <div controller="navController">
+    <nav ng-show="visible" class="navbar navbar-default primary" style="margin-bottom:0px;">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-5 col-centered">
+            <div class="navbar-header">
+              <!-- <a id="logo" href="#"><img src="/images/VPR-Rocks-lg.png" /></a> -->
+              <h1> Vultures Playing Ruckus </h1>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-5 col-centered">
+            <ul class="nav navbar-nav">
+              <li><a href="#!/home"><b>Home</b></a></li>
+              <li><a href="#!/music"><b>Music</b></a></li>
+              <li><a href="#!/tour"><b>Tour</b></a></li>
+              <li><a href="#!/tour"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+              <li><a href="#!/tour"><i class="fa fa-youtube-square fa-2x"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div ng-view>
+  </div>
+  <script type="text/javascript" src="/js/angular.min.js">
+  </script>
+  <script type="text/javascript" src="/js/angular.router.min.js">
+  </script>
+  <script type="text/javascript" src="/js/bootstrap.angular.min.js">
+  </script>
+  <script type="text/javascript" src="/js/carousel_image_data.js">
+  </script>
+  <script>
+    var app = angular.module("vpr_main", ["ngRoute", "ui.bootstrap"]);
+    app.config(function ($routeProvider) {
+      $routeProvider
+        .when("/home", {
+          templateUrl: "./views/home/home.html",
+          controller: "homeController"
+        })
+        .when("/music", {
+          templateUrl: "./views/music/music.html"
+        })
+        .when("/tour", {
+          templateUrl: "./views/tour/tour.html"
+        })
+        .otherwise({
+          templateUrl: '/views/main/main.html',
+          controller: "navController"
+        })
+    });
+    app.controller('navController', function($scope){
+        $scope.visible = false;
+    });
+    app.controller('homeController', function ($scope) {
+      $scope.navigation = true;
+      $scope.myInterval = 5000;
+      $scope.noWrapSlides = false;
+      $scope.active = 0;
+      var currIndex = 0;
+      var slides = $scope.slides = data;
+    });
+  </script>
 </body>
+
 </html>

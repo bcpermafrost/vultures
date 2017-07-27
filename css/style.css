@@ -1,43 +1,53 @@
+/* Globals */
 body{
 	background-color: rgba(128,128,128,0.5);
 }
-.color_one{
-	background-color: #ec2045;
-}
-.color_two{
-	background-color: #a2d49f;
-}
-.color_three{
-	background-color: #c7c12f;
-}
-.color_four{
-	background-color: #f26247;
-}
-.primary{
-	/*background-color: #ffedaf;*/
-	background-color: rgba(236, 32, 69, 0.8);
+
+h1, h2, h3, h4, h5, h6{ 
+	color: white;
 }
 
 a {
 	color : white !important;
 }
 
-.navbar{
-	border: 1px solid white;
-	border-radius: 0px;
-}
-
 a:hover { 
 	color : #a2d49f !important;
 }
 
-.navbar-nav li a {
- line-height: 30px;
+/* Classes */
+.carousel{
+	background-color: rgba(40,40,40,1);
 }
 
-#logo{
-  display: block;
+.primary{
+	/*background-color: #ffedaf;*/
+	background-color: rgba(236, 32, 69, 1.0);
+}
 
+.color_one{
+	background-color: #ec2045;
+}
+
+.color_two{
+	background-color: #a2d49f;
+}
+
+.color_three{
+	background-color: #c7c12f;
+}
+
+.color_four{
+	background-color: #f26247;
+}
+
+.navbar{
+	border: none;
+	border-radius: 0px;
+}
+
+.navbar-nav li a {
+ line-height: 30px;
 }
 
 .col-abs-center{
@@ -50,4 +60,9 @@ a:hover {
 .col-centered{
     float: none;
     margin: 0 auto;
+}
+
+/* Specifics */
+#logo{
+  display: block;
 }
