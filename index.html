@@ -6,33 +6,9 @@
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/font-awesome.min.css">
   <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Zilla+Slab" rel="stylesheet"> 
 </head>
 <body ng-app="vpr_main">
-  <div controller="navController">
-    <nav ng-show="visible" class="navbar navbar-default primary" style="margin-bottom:0px;">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-5 col-centered">
-            <div class="navbar-header">
-              <!-- <a id="logo" href="#"><img src="/images/VPR-Rocks-lg.png" /></a> -->
-              <h1> Vultures Playing Ruckus </h1>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-5 col-centered">
-            <ul class="nav navbar-nav">
-              <li><a href="#!/home"><b>Home</b></a></li>
-              <li><a href="#!/music"><b>Music</b></a></li>
-              <li><a href="#!/tour"><b>Tour</b></a></li>
-              <li><a href="#!/tour"><i class="fa fa-facebook-square fa-2x"></i></a></li>
-              <li><a href="#!/tour"><i class="fa fa-youtube-square fa-2x"></i></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </div>
   <div ng-view>
   </div>
   <script type="text/javascript" src="/js/angular.min.js">

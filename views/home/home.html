@@ -2,21 +2,23 @@
 <nav class="navbar navbar-default primary" style="margin-bottom:0px;">
   <div class="container">
     <div class="row">
-      <div class="col-xs-5 col-centered">
+      <div class="col-xs-6 col-centered">
         <div class="navbar-header">
           <!-- <a id="logo" href="#"><img src="/images/VPR-Rocks-lg.png" /></a> -->
-          <h1> Vultures Playing Ruckus </h1>
+          <h1>  Vultures Playing Ruckus  </h1>
         </div>
       </div>
     </div>
     <div class="row">
-      <div class="col-xs-5 col-centered">
+      <div class="col-xs-6 col-centered">
         <ul class="nav navbar-nav">
-          <li><a href="#!/home"><b>Home</b></a></li>
+          <li><a class="active_link" href="#!/home"><b>Home</b></a></li>
           <li><a href="#!/music"><b>Music</b></a></li>
           <li><a href="#!/tour"><b>Tour</b></a></li>
-          <li><a href="#!/tour"><i class="fa fa-facebook-square fa-2x"></i></a></li>
-          <li><a href="#!/tour"><i class="fa fa-youtube-square fa-2x"></i></a></li>
+          <li><a href="#!/tour"><b>Merch</b></a></li>
+          <li><a href="#!/tour"><b>Music</b></a></li>
+          <li><a href="#!/tour"><i class="fa fa-facebook-square fa-lg"></i></a></li>
+          <li><a href="#!/tour"><i class="fa fa-youtube-square fa-lg"></i></a></li>
         </ul>
       </div>
     </div>
@@ -26,9 +28,9 @@
   <div ng-controller="homeController">
     <div class="col-xs-12">
       <div class="carousel">
-        <div class="ng-isolate-scope carousel" uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides" style="margin: auto; width:100%; height: 75vh !important;">
+        <div class="ng-isolate-scope carousel" uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides" style="width:100%; height: 80h !important;">
           <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
-            <img ng-src="{{slide.image}}" style="padding-top: 20px;" height="650vh;">
+            <img ng-src="{{slide.image}}"  height="650vh;">
             <div class="carousel-caption">
             </div>
           </div>
@@ -38,38 +40,29 @@
     <!-- End of Controller -->
   </div>
 </div>
-<div class="row">
-  <div class="col-xs-4 color_one text-center">
-    <br>
-    <br>
-    <br>
-    <br>
-    <h1> Tours </h1>
-    <br>
-    <br>
-    <br>
-    <br>
+ <div class="row">
+  <div class="col-xs-4 color_one text-center" style="min-height: 200px !important;">
+
+    <h1 style="padding-top: 50px;"> Tours </h1>
+
   </div>
-  <div class="col-xs-4 color_two text-center">
-    <br>
-    <br>
-    <br>
-    <br>
-    <h1> Merch </h1>
-    <br>
-    <br>
-    <br>
-    <br>
+  <div class="col-xs-4 color_one text-center" style="min-height: 200px !important;">
+
+    <h1 style="padding-top: 50px;"> Merch </h1>
+
   </div>
-  <div class="col-xs-4 color_three text-center">
-    <br>
-    <br>
-    <br>
-    <br>
-    <h1> Tunes </h1>
-    <br>
-    <br>
-    <br>
-    <br>
+  <div class="col-xs-4 color_one text-center" style=" min-height: 200px!important;">
+
+    <h1 style="padding-top: 50px;"> Music </h1>
+
   </div>
-</div>
+</div> 
+
+ <div class="row">
+  <div class="col-xs-12 color_two text-center" style="min-height: 600px !important;">
+
+   
+
+  </div>
+ 
+</div> 
