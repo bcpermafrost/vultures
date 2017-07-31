@@ -94,7 +94,7 @@ a:hover {
 .col-abs-center{
 	float: none;
 	position:absolute;
-	left:40%;
+	left:42%;
 	top:30%;
 }
 
@@ -104,6 +104,14 @@ a:hover {
 }
 
 /* Specifics */
-#logo{
+#vpr_logo{
   display: block;
+}
+
+.vpr_table{
+	border: 1px solid #101010;
+}
+
+.vpr_table > tbody > tr > td > a {
+	color : blue;
 }
