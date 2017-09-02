@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<head>
+  <title> VPR Rocks </title>
+  <!-- Style Sheets -->
+  <link rel="stylesheet" href="/vultures/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/vultures/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/vultures/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Zilla+Slab" rel="stylesheet"> 
+</head>
+<body ng-app="vpr_main">
+  <div ng-view>
+  </div>
+  <script type="text/javascript" src="/vultures/js/angular.min.js">
+  </script>
+  <script type="text/javascript" src="/vultures/js/angular.router.min.js">
+  </script>
+  <script type="text/javascript" src="/vultures/js/bootstrap.angular.min.js">
+  </script>
+  <script type="text/javascript" src="/vultures/js/carousel_image_data.js">
+  </script>
+  <script>
+    var app = angular.module("vpr_main", ["ngRoute", "ui.bootstrap"]);
+    app.config(function ($routeProvider) {
+      $routeProvider
+        .when("/home", {
+          templateUrl: "/vultures/views/home/home.html",
+          controller: "homeController"
+        })
+        .when("/music", {
+          templateUrl: "/vultures/views/maintenance/maintenance.html"
+        })
+        .when("/tour", {
+          templateUrl: "/vultures/views/tour/tour.html"
+        })
+        .when("/merch", {
+          templateUrl: "/vultures/views/maintenance/maintenance.html"
+        })
+        .otherwise({
+          templateUrl: "/vultures/views/home/home.html",
+          controller: "homeController"
+        });
+    });
+
+    app.controller('homeController', function ($scope) {
+      $scope.navigation = true;
+      $scope.myInterval = 5000;
+      $scope.noWrapSlides = false;
+      $scope.active = 0;
+      var currIndex = 0;
+      var slides = $scope.slides = data;
+    });
+  </script>
+</body>
+
+</html>
