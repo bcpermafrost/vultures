@@ -6,11 +6,28 @@
   <link rel="stylesheet" href="/vultures/css/bootstrap.min.css">
   <link rel="stylesheet" href="/vultures/css/font-awesome.min.css">
   <link rel="stylesheet" href="/vultures/css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Zilla+Slab" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Zilla+Slab" rel="stylesheet">
 </head>
+
 <body ng-app="vpr_main">
   <div ng-view>
+
   </div>
+  <div class="container footer">
+      <hr />
+      <div class="text-center center-block">
+        <h3> Contact </h3>
+        <p>
+  
+          Book Us (or other managerial inquiries)<br> Email: ben@ruckusrecords.ca<br>
+  
+        </p>
+        <br />
+        <a href="https://www.facebook.com/VultureRock/"><i class="fa fa-facebook-square fa-3x social"></i></a>
+        <!-- <a href="https://twitter.com/bootsnipp"><i class="fa fa-twitter-square fa-3x social"></i></a> -->
+        <a href="mailto:vulturesplayingruckus@gmail.com"><i class="fa fa-envelope-square fa-3x social"></i></a>
+      </div>
+    </div>
   <script type="text/javascript" src="/vultures/js/angular.min.js">
   </script>
   <script type="text/javascript" src="/vultures/js/angular.router.min.js">
@@ -25,30 +42,44 @@
       $routeProvider
         .when("/home", {
           templateUrl: "/vultures/views/home/home.html",
-          controller: "homeController"
+          controller: "homeController",
+          activetab: 'home'
         })
         .when("/music", {
-          templateUrl: "/vultures/views/maintenance/maintenance.html"
+          templateUrl: "/vultures/views/maintenance/maintenance.html",
+          activetab: 'music'
         })
         .when("/tour", {
-          templateUrl: "/vultures/views/tour/tour.html"
+          templateUrl: "/vultures/views/tour/tour.html",
+          controller: 'tourController',
+          activetab: 'tour'          
         })
         .when("/merch", {
-          templateUrl: "/vultures/views/maintenance/maintenance.html"
+          templateUrl: "/vultures/views/maintenance/maintenance.html",
+          activetab: 'merch'          
         })
         .otherwise({
           templateUrl: "/vultures/views/home/home.html",
-          controller: "homeController"
+          controller: "homeController",
+          activetab: 'home'          
         });
     });
 
-    app.controller('homeController', function ($scope) {
+    app.controller('homeController', function ($scope, $route) {
+      $scope.$route = $route;
+
       $scope.navigation = true;
       $scope.myInterval = 5000;
       $scope.noWrapSlides = false;
       $scope.active = 0;
       var currIndex = 0;
       var slides = $scope.slides = data;
+      
+    });
+    app.controller('tourController', function ($scope, $route) {
+      $scope.$route = $route;
+      var slides = $scope.slides = data;
+      
     });
   </script>
 </body>

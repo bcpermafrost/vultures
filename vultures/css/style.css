@@ -22,10 +22,18 @@ a {
 }
 
 ul > li > a:hover { 
-	background-color: #f26247 !important; 
+
+	animation-name: link_hover;
+	animation-duration: 0.2s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in-out;
  	color: #eeeeee !important;
 }
 
+@keyframes link_hover{
+	from { background-color: #151515; }
+	to { background-color: #f26247; }
+}
 
 /* Classes */
 .carousel{
@@ -41,11 +49,23 @@ ul > li > a:hover {
 
 .color_one{
 	background-color: #151515;	
+	border: 1px solid #151515;
 }
 
 .color_one:hover{
-	background-color: #151515;	
-	border: 1px solid #D8C9AC;
+	animation-timing-function: ease-in-out;
+	animation-name: hover_glow;
+	animation-fill-mode: forwards;
+	animation-duration: 0.6s;
+}
+
+@keyframes hover_glow{
+	from{ 
+		border-color: #151515; 
+	}
+	to{ 
+		border-color: #D8C9AC; 
+	}
 }
 
 .color_two{

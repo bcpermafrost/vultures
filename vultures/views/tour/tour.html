@@ -1,28 +1,51 @@
 <nav class="navbar navbar-default primary" style="margin-bottom:0px;">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-6 col-centered">
-        <div class="navbar-header">
-          <!-- <a id="logo" href="#"><img src="/images/VPR-Rocks-lg.png" /></a> -->
-          <h1> Vultures Playing Ruckus </h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6 col-centered">
+                <div class="navbar-header">
+                    <!-- <a id="logo" href="#"><img src="/images/VPR-Rocks-lg.png" /></a> -->
+                    <h1> Vultures Playing Ruckus </h1>
+                </div>
+            </div>
         </div>
-      </div>
+        <div class="row">
+            <div class="col-xs-6 col-centered">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a ng-class="{active_link: $route.current.activetab == 'home'}" href="#!/home">
+                            <b>Home</b>
+                        </a>
+                    </li>
+                    <li>
+                        <a ng-class="{active_link: $route.current.activetab == 'music'}" href="#!/music">
+                            <b>Music</b>
+                        </a>
+                    </li>
+                    <li>
+                        <a ng-class="{active_link: $route.current.activetab == 'tour'}" href="#!/tour">
+                            <b>Tour</b>
+                        </a>
+                    </li>
+                    <li>
+                        <a ng-class="{active_link: $route.current.activetab == 'merch'}" href="#!/merch">
+                            <b>Merch</b>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/VultureRock/">
+                            <i class="fa fa-facebook-square fa-lg"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCqC1DiIbTO8E1pyikw5oRNQ/featured">
+                            <i class="fa fa-youtube-square fa-lg"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <div class="row">
-      <div class="col-xs-6 col-centered">
-        <ul class="nav navbar-nav">
-          <li><a href="#!/home"><b>Home</b></a></li>
-          <li><a href="#!/music"><b>Music</b></a></li>
-          <li><a class="active_link" href="#!/tour"><b>Tour</b></a></li>
-          <li><a href="#!/merch"><b>Merch</b></a></li>
-          <li><a href="https://www.facebook.com/VultureRock/"><i class="fa fa-facebook-square fa-lg"></i></a></li>
-          <li><a href="https://www.youtube.com/channel/UCiOBWT3t_flSnXIsZ8PYAEQ"><i class="fa fa-youtube-square fa-lg"></i></a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
 </nav>
-
 <div class="container" style="padding: 10px;">
     <div class="table-responsive">
         <table class="table vpr_table">
@@ -49,28 +72,44 @@
                     <td>London, Ontario</td>
                     <td>London Music Hall</td>
                     <td>August 28th</td>
-                    <td><a href="#"><b>Get Tickets</b></a></td>
+                    <td>
+                        <a href="#">
+                            <b>Get Tickets</b>
+                        </a>
+                    </td>
                 </tr>
                 <tr>
                     <td>2</td>
                     <td>Toronto, Ontario</td>
                     <td>Fox and the Fiddle</td>
                     <td>Sept 1st</td>
-                    <td><a href="#"><b>Get Tickets</b></a></td>
+                    <td>
+                        <a href="#">
+                            <b>Get Tickets</b>
+                        </a>
+                    </td>
                 </tr>
                 <tr>
                     <td>3</td>
                     <td>London, Ontario</td>
                     <td>Scotts Corner</td>
                     <td>Sept 5th</td>
-                    <td><a href="#"><b>Get Tickets</b></a></td>
+                    <td>
+                        <a href="#">
+                            <b>Get Tickets</b>
+                        </a>
+                    </td>
                 </tr>
                 <tr>
                     <td>4</td>
                     <td>Toronto, Ontario</td>
                     <td>Molson Ampitheatre</td>
                     <td>Sept 30th</td>
-                    <td><a href="#"><b>Get Tickets</b></a></td>
+                    <td>
+                        <a href="#">
+                            <b>Get Tickets</b>
+                        </a>
+                    </td>
                 </tr>
             </tbody>
         </table>
